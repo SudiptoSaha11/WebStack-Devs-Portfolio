@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter } from 'lucide-react';
 import { Link } from 'react-scroll';
 
 const Footer = () => {
@@ -9,14 +9,15 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center mb-12">
                     <div className="mb-8 md:mb-0">
                         <Link to="home" smooth={true} duration={500} className="cursor-pointer flex items-center gap-2 group mb-4">
-                            <div className="p-2 bg-blue-600 rounded-lg group-hover:bg-blue-500 transition-colors">
-                                <Code size={24} className="text-white" />
-                            </div>
-                            <span className="text-xl font-bold text-white tracking-tight">WebStack<span className="text-blue-400">Devs</span></span>
-                        </Link>
-                        <p className="text-slate-400 max-w-xs">
+                            <div className="rounded-lg transition-colors mr-[-20px]">
+                        <img src="/Logo1.PNG" alt="Logo" className="w-[120px] h-[100px] object-contain" />
+                    </div>
+                            <div className='pt-6'><span className="text-xl font-bold text-white tracking-tight">WebStack<span className="text-blue-400">Devs</span></span>
+                            <p className="text-slate-400 max-w-xs">
                             Crafting digital experiences that inspire and engage. Your vision, our code.
-                        </p>
+                            </p></div>
+                        </Link>
+                        
                     </div>
 
                     <div className="flex gap-6">

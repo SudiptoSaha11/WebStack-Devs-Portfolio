@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Code } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -23,13 +23,13 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-nav py-4' : 'bg-transparent py-6'}`}>
-            <div className="container mx-auto px-6 flex justify-between items-center">
-                <Link to="home" smooth={true} duration={500} className="cursor-pointer flex items-center gap-2 group">
-                    <div className="p-2 bg-blue-600 rounded-lg group-hover:bg-blue-500 transition-colors">
-                        <Code size={24} className="text-white" />
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-nav' : 'bg-transparent'}`}>
+            <div className="container mx-auto px-4 flex justify-between items-center">
+                <Link to="home" smooth={true} duration={500} className="cursor-pointer flex items-center group">
+                    <div className="rounded-lg transition-colors mr-[-10px]">
+                        <img src="/Logo1.PNG" alt="Logo" className="w-[120px] h-[100px] object-contain" />
                     </div>
-                    <span className="text-xl font-bold text-white tracking-tight">WebStack<span className="text-blue-400">Devs</span></span>
+                    <span className="text-2xl font-bold text-white tracking-tight">WebStack<span className="text-blue-400">Devs</span></span>
                 </Link>
 
                 {/* Desktop Menu */}
